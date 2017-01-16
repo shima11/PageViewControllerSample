@@ -14,6 +14,10 @@
 		D41F0AA21E2C6FEE0082B53D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41F0AA01E2C6FEE0082B53D /* LaunchScreen.storyboard */; };
 		D41F0AAD1E2C6FEF0082B53D /* PageViewControllerSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41F0AAC1E2C6FEF0082B53D /* PageViewControllerSampleTests.swift */; };
 		D41F0AB81E2C6FEF0082B53D /* PageViewControllerSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41F0AB71E2C6FEF0082B53D /* PageViewControllerSampleUITests.swift */; };
+		D41F0AC61E2C70530082B53D /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41F0AC51E2C70530082B53D /* PageViewController.swift */; };
+		D41F0AC81E2C705F0082B53D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41F0AC71E2C705F0082B53D /* ImageViewController.swift */; };
+		D41F0ACA1E2CFBDC0082B53D /* PageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41F0AC91E2CFBDB0082B53D /* PageViewController.storyboard */; };
+		D41F0ACC1E2D03890082B53D /* UIStoryboard+getInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41F0ACB1E2D03890082B53D /* UIStoryboard+getInstance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		D41F0AB31E2C6FEF0082B53D /* PageViewControllerSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PageViewControllerSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41F0AB71E2C6FEF0082B53D /* PageViewControllerSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewControllerSampleUITests.swift; sourceTree = "<group>"; };
 		D41F0AB91E2C6FEF0082B53D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41F0AC51E2C70530082B53D /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		D41F0AC71E2C705F0082B53D /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		D41F0AC91E2CFBDB0082B53D /* PageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageViewController.storyboard; sourceTree = "<group>"; };
+		D41F0ACB1E2D03890082B53D /* UIStoryboard+getInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+getInstance.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				D41F0A971E2C6FEE0082B53D /* AppDelegate.swift */,
+				D41F0ACB1E2D03890082B53D /* UIStoryboard+getInstance.swift */,
+				D41F0AC51E2C70530082B53D /* PageViewController.swift */,
+				D41F0AC91E2CFBDB0082B53D /* PageViewController.storyboard */,
+				D41F0AC71E2C705F0082B53D /* ImageViewController.swift */,
 				D41F0A991E2C6FEE0082B53D /* ViewController.swift */,
 				D41F0A9B1E2C6FEE0082B53D /* Main.storyboard */,
 				D41F0A9E1E2C6FEE0082B53D /* Assets.xcassets */,
@@ -235,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41F0ACA1E2CFBDC0082B53D /* PageViewController.storyboard in Resources */,
 				D41F0AA21E2C6FEE0082B53D /* LaunchScreen.storyboard in Resources */,
 				D41F0A9F1E2C6FEE0082B53D /* Assets.xcassets in Resources */,
 				D41F0A9D1E2C6FEE0082B53D /* Main.storyboard in Resources */,
@@ -262,7 +275,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41F0ACC1E2D03890082B53D /* UIStoryboard+getInstance.swift in Sources */,
+				D41F0AC61E2C70530082B53D /* PageViewController.swift in Sources */,
 				D41F0A9A1E2C6FEE0082B53D /* ViewController.swift in Sources */,
+				D41F0AC81E2C705F0082B53D /* ImageViewController.swift in Sources */,
 				D41F0A981E2C6FEE0082B53D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
