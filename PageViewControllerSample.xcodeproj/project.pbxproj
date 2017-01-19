@@ -18,6 +18,8 @@
 		D41F0AC81E2C705F0082B53D /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41F0AC71E2C705F0082B53D /* ImageViewController.swift */; };
 		D41F0ACA1E2CFBDC0082B53D /* PageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41F0AC91E2CFBDB0082B53D /* PageViewController.storyboard */; };
 		D41F0ACC1E2D03890082B53D /* UIStoryboard+getInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41F0ACB1E2D03890082B53D /* UIStoryboard+getInstance.swift */; };
+		D41F0ACE1E2DBD210082B53D /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41F0ACD1E2DBD210082B53D /* VideoViewController.swift */; };
+		D41F0AD01E2DC3DF0082B53D /* Pageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41F0ACF1E2DC3DF0082B53D /* Pageable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		D41F0AC71E2C705F0082B53D /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		D41F0AC91E2CFBDB0082B53D /* PageViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PageViewController.storyboard; sourceTree = "<group>"; };
 		D41F0ACB1E2D03890082B53D /* UIStoryboard+getInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+getInstance.swift"; sourceTree = "<group>"; };
+		D41F0ACD1E2DBD210082B53D /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		D41F0ACF1E2DC3DF0082B53D /* Pageable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pageable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +113,9 @@
 				D41F0ACB1E2D03890082B53D /* UIStoryboard+getInstance.swift */,
 				D41F0AC51E2C70530082B53D /* PageViewController.swift */,
 				D41F0AC91E2CFBDB0082B53D /* PageViewController.storyboard */,
+				D41F0ACF1E2DC3DF0082B53D /* Pageable.swift */,
 				D41F0AC71E2C705F0082B53D /* ImageViewController.swift */,
+				D41F0ACD1E2DBD210082B53D /* VideoViewController.swift */,
 				D41F0A991E2C6FEE0082B53D /* ViewController.swift */,
 				D41F0A9B1E2C6FEE0082B53D /* Main.storyboard */,
 				D41F0A9E1E2C6FEE0082B53D /* Assets.xcassets */,
@@ -277,6 +283,8 @@
 			files = (
 				D41F0ACC1E2D03890082B53D /* UIStoryboard+getInstance.swift in Sources */,
 				D41F0AC61E2C70530082B53D /* PageViewController.swift in Sources */,
+				D41F0AD01E2DC3DF0082B53D /* Pageable.swift in Sources */,
+				D41F0ACE1E2DBD210082B53D /* VideoViewController.swift in Sources */,
 				D41F0A9A1E2C6FEE0082B53D /* ViewController.swift in Sources */,
 				D41F0AC81E2C705F0082B53D /* ImageViewController.swift in Sources */,
 				D41F0A981E2C6FEE0082B53D /* AppDelegate.swift in Sources */,
@@ -528,6 +536,7 @@
 				D41F0ABE1E2C6FEF0082B53D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D41F0ABF1E2C6FEF0082B53D /* Build configuration list for PBXNativeTarget "PageViewControllerSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +545,7 @@
 				D41F0AC11E2C6FEF0082B53D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D41F0AC21E2C6FEF0082B53D /* Build configuration list for PBXNativeTarget "PageViewControllerSampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +554,7 @@
 				D41F0AC41E2C6FEF0082B53D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

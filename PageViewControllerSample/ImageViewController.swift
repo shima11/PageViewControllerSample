@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ImageViewController: UIViewController {
+class ImageViewController: UIViewController, Pageable {
 
     var pageIndex: Int = 0
     var data: String = ""
@@ -26,7 +26,7 @@ class ImageViewController: UIViewController {
         
         let label = UILabel()
         label.frame = CGRect(x:0,y:0,width:200,height:40)
-        label.text  = "page\(pageIndex)-" + data
+        label.text  = "image page\(pageIndex)-" + data
         label.center = view.center
         view.addSubview(label)
     }

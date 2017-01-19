@@ -30,7 +30,13 @@ class PageViewController: UIPageViewController {
             viewcontrollers.append(viewcontroller)
             index += 1
         }
-        
+        for data in datas {
+            let viewcontroller = VideoViewController()
+            viewcontroller.view.frame = view.frame
+            viewcontroller.setData(pageIndex: index, data: data)
+            viewcontrollers.append(viewcontroller)
+            index += 1
+        }
         setViewControllers([viewcontrollers.first!], direction: .forward, animated: false, completion: nil)
     }
 
@@ -38,14 +44,20 @@ class PageViewController: UIPageViewController {
 
 extension PageViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        currentPageIndex = (viewController as! ImageViewController).pageIndex
-        if currentPageIndex-1 < 0 { return nil }
-        return viewcontrollers[currentPageIndex-1]
+        currentPageIndex = (viewController as! Pageable).pageIndex
+        if currentPageIndex-1 < 0 {
+            return nil
+        }
+        currentPageIndex -= 1
+        return viewcontrollers[currentPageIndex]
     }
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        currentPageIndex = (viewController as! ImageViewController).pageIndex
-        if currentPageIndex >= datas.count-1 { return nil }
-        return viewcontrollers[currentPageIndex+1]
+        currentPageIndex = (viewController as! Pageable).pageIndex
+        if currentPageIndex+1 >= viewcontrollers.count {
+            return nil
+        }
+        currentPageIndex += 1
+        return viewcontrollers[currentPageIndex]
     }
     
 //    func viewControllerAtIndex(index: Int) -> UIViewController {
@@ -58,6 +70,7 @@ extension PageViewController: UIPageViewControllerDataSource {
 
 extension PageViewController: UIPageViewControllerDelegate {
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        currentPageIndex = (previousViewControllers.first as! Pageable).pageIndex
         print("current index:\(currentPageIndex)")
     }
 }
